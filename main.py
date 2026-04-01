@@ -31,4 +31,4 @@ for forecast in weather_data["list"]:
         will_rain = True        
 if will_rain:
     tw_client = Client(TW_ACC_SID, TW_AUTH)
-    whatsapp = tw_client.messages.create(body="Prepare: Rain today", to=f"whatsapp:{WA_RECIPIENT}", from_=f"whatsapp:{WA_SENDER}")
+    whatsapp = tw_client.messages.create(body="Prepare: Rain today", to=f"whatsapp:{TO_NUMBER}", from_=f"whatsapp:{FROM_NUMBER}")
