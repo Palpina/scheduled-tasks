@@ -40,7 +40,13 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run script
-        # env:
+        env:
+          OPEN_WEATHER_API: ${{ secrets.OPEN_WEATHER_API }}
+          TWILIO_SID: ${{ secrets.TWILIO_SID }}
+          TWILIO_AUTH: ${{ secrets.TWILIO_AUTH }}
+          WA_RECIPIENT: ${{ secrets.WA_RECIPIENT }}
+          WA_SENDER: ${{ secrets.WA_SENDER }}
+
         #   # Your secrets are available as environment variables
         #   # Add more secrets in Settings > Secrets > Actions
         #   MY_EMAIL: ${{ secrets.MY_EMAIL }}
