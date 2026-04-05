@@ -3,13 +3,13 @@ import requests
 from twilio.rest import Client
 
 OW_ENDPOINT= "https://api.openweathermap.org/data/2.5/forecast"
-OW_API = os.environ.get["OPEN_WEATHER_API"]
+OW_API = os.environ.get("OPEN_WEATHER_API")
 HB_LONG = 8.807982
 HB_LAT = 53.075250
-TW_ACC_SID = os.environ.get["TWILIO_SID"]
-TW_AUTH = os.environ.get["TWILIO_AUTH"]
-TO_NUMBER = os.environ.get["WA_RECIPIENT"]
-FROM_NUMBER = os.environ.get["WA_SENDER"]
+TW_ACC_SID = os.environ.get("TWILIO_SID")
+TW_AUTH = os.environ.get("TWILIO_AUTH")
+TO_NUMBER = os.environ.get("WA_RECIPIENT")
+FROM_NUMBER = os.environ.get("WA_SENDER")
 
 
 parameters = {
